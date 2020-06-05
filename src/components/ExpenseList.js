@@ -1,11 +1,23 @@
 import React from "react";
 import Item from "./ExpenseItem";
 
-const ExpenseList = () => {
+import { MdDeleteSweep } from "react-icons/md";
+
+const ExpenseList = ({ expenses }) => {
   return (
-    <div>
-      <Item />
-    </div>
+    <>
+      <ul className="list">
+        {expenses.map((expense) => {
+          return <Item key={expense.id} expense={expense} />;
+        })}
+      </ul>
+      {expenses.length > 0 && (
+        <button className="btn">
+          Clear
+          <MdDeleteSweep className="btn-icon" />
+        </button>
+      )}
+    </>
   );
 };
 
