@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 :root {
-  --primaryColor: #f15025;
+  --primaryColor: #66d3fa;
   --mainWhite: #fff;
   --mainBlack: #222;
-  --mainGrey: #9e9e9e;
-  --mainRed: #d50000;
+  --mainPink: #ffc0cb;
+  --mainRed: #f08080;
   --mainGreen: #4caf50;
 }
 * {
@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 body {
-  background: var(--mainGrey);
+  background: #dcdcdc;
   color: var(--mainBlack);
   font-family: "Roboto", sans-serif;
 }
@@ -22,6 +22,9 @@ h1 {
   margin: 2rem 0;
   color: var(--mainWhite);
   letter-spacing: 5px;
+  font-family: monospace;
+  font-size: 35px;
+  line-height: 1.6;
 }
 .App {
   margin: 0 auto;
@@ -30,6 +33,8 @@ h1 {
   background: var(--mainWhite);
   padding-bottom: 2rem;
   border-radius: 2px;
+  border-radius: 10px;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
 }
 .form-center {
   display: flex;
@@ -41,7 +46,7 @@ h1 {
 }
 label {
   display: block;
-  color: var(--mainGrey);
+  color: var(--mainPink);
   font-size: 1rem;
   text-transform: capitalize;
 }
@@ -49,7 +54,7 @@ label {
 .form-control {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--mainGrey);
+  border-bottom: 1px solid var(--mainPink);
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -61,7 +66,7 @@ label {
 .btn {
   text-decoration: none;
   color: var(--mainWhite);
-  background-color: var(--primaryColor);
+  background-color: var(--mainPink);
   text-align: center;
   letter-spacing: 0.5px;
   font-size: 14px;
@@ -120,9 +125,9 @@ label {
   font-weight: 300;
   font-size: 1rem;
   color: var(--mainWhite);
-  background-color: var(--primaryColor);
-  border-radius: 2px;
-  padding: 1px 3px;
+  background-color: var(--mainPink);
+  border-radius: 7px;
+  padding: 5px 7px;
 }
 .clear-btn,
 .edit-btn {
@@ -152,9 +157,9 @@ label {
 .total {
   font-weight: 300;
   color: var(--mainWhite);
-  background-color: var(--primaryColor);
-  border-radius: 2px;
-  padding: 2px 5px;
+  background-color: var(--mainPink);
+  border-radius: 7px;
+  padding: 4px 7px;
 }
 .alert {
   padding: 0.75rem 1.25rem;
@@ -163,7 +168,7 @@ label {
   text-transform: capitalize;
   width: 90%;
   margin: 2rem auto 0 auto;
-  border-radius: 2px;
+  border-radius: 10px;
   text-transform: capitalize;
 }
 .alert-danger {
