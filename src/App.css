@@ -134,9 +134,20 @@ label {
 }
 .clear-btn {
   color: var(--mainRed);
+  transition: all 0.2s linear;
 }
+
+.clear-btn:hover {
+  transform: scale(1.2);
+}
+
 .edit-btn {
   color: var(--mainGreen);
+  transition: all 0.2s linear;
+}
+
+.edit-btn:hover {
+  transform: scale(1.2);
 }
 .total {
   font-weight: 300;

@@ -12,7 +12,7 @@ const ExpenseForm = ({
     <form onSubmit={handleSubmit}>
       <div className="form-center">
         <div className="form-group">
-          <label htmlFor="charge">Expense description:</label>
+          <label htmlFor="charge">Description:</label>
           <input
             type="text"
             className="form-control"
